@@ -97,7 +97,44 @@ footer{
 <p>3+ years experience in enterprise & industrial networks | Cisco | Juniper | Comware | Hirschmann</p>
 <a href="KARTHICK T.pdf" class="btn" download>Download Resume</a>
 </div>
+</div
+
+    <!-- PROJECT SLIDER -->
+<div class="slider">
+    <img class="slide active"IMG_20250903_105625.jpg">
+    <img class="slide" src="IMG_20250904_153557.jpg">
+    <img class="slide" src="IMG_20251104_103546.jpg">
+    <img class="slide" src="IMG_20251104_103622.jpg">
 </div>
+
+<style>
+.slider{
+    width:90%;
+    max-width:900px;
+    margin:30px auto;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+.slide{
+    width:100%;
+    display:none;
+}
+.slide.active{
+    display:block;
+}
+</style>
+
+<script>
+let index = 0;
+let slides = document.querySelectorAll(".slide");
+
+setInterval(()=>{
+    slides[index].classList.remove("active");
+    index = (index + 1) % slides.length;
+    slides[index].classList.add("active");
+},3000);
+</script>
 
 <!-- ABOUT -->
 <div class="section">
